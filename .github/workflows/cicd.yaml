@@ -5,9 +5,9 @@ on:
             - 'main'
             - 'feature*'
             - 'feature/*'
-        branches-ignore:
-            - 'release*'
-            - 'release/*'
+        # branches-ignore:
+        #     - 'release*'
+        #     - 'release/*'
 jobs:
     test:
         name: Unit Test
