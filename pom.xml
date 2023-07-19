@@ -261,7 +261,7 @@
 		<repository>
 			<id>github</id>
 			<name>NoticeBoard Simple CRUD application</name>
-			<url>https://maven.pkg.github.com/wkrzywiec/NoticeBoard</url>
+			<url>https://maven.pkg.github.com/testuser300693/github-actions-cicd</url>
 		</repository>
 	</distributionManagement>
 
