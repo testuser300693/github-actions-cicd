@@ -57,7 +57,7 @@ jobs:
     raisepr:
       name: Bump POM version
       runs-on: ubuntu-latest
-      needs: [test, sonar]
+      needs: updatepom
       steps:
           - uses: actions/checkout@v3
           - name: create PR
