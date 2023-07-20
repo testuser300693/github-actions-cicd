@@ -1,5 +1,6 @@
 # Noticeboard CRUD application
 
+
 ![Master Branch](https://github.com/test/NoticeBoard/workflows/Master%20Branch/badge.svg) [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=test_NoticeBoard&metric=coverage)](https://sonarcloud.io/dashboard?id=test_NoticeBoard) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=test_NoticeBoard&metric=alert_status)](https://sonarcloud.io/dashboard?id=test_NoticeBoard)
 
 This is a simple RESTful CRUD (Create Read Update Delete) application for managing Boards, Notices and Authors saved in PostgreSQL database. It provides basic REST endpoints like fetching all objects of given type, finding them by their id, creating them and so on.
