@@ -1,6 +1,6 @@
-package com.wkrzywiec.medium.noticeboard.controller;
+package com.test.medium.noticeboard.controller;
 
-import com.wkrzywiec.medium.noticeboard.config.IntegrationTestConfig;
+import com.test.medium.noticeboard.config.IntegrationTestConfig;
 import io.restassured.RestAssured;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.extension.ExtendWith;

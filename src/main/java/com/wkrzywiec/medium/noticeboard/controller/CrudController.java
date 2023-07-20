@@ -1,7 +1,7 @@
-package com.wkrzywiec.medium.noticeboard.controller;
+package com.test.medium.noticeboard.controller;
 
-import com.wkrzywiec.medium.noticeboard.controller.dto.BaseDTO;
-import com.wkrzywiec.medium.noticeboard.service.CrudService;
+import com.test.medium.noticeboard.controller.dto.BaseDTO;
+import com.test.medium.noticeboard.service.CrudService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,4 +1,4 @@
-package com.wkrzywiec.medium.noticeboard.controller.dto;
+package com.test.medium.noticeboard.controller.dto;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;

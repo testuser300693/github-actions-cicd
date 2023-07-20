@@ -1,9 +1,9 @@
-package com.wkrzywiec.medium.noticeboard.controller;
+package com.test.medium.noticeboard.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.wkrzywiec.medium.noticeboard.controller.dto.AuthorDTO;
-import com.wkrzywiec.medium.noticeboard.controller.dto.BoardDTO;
-import com.wkrzywiec.medium.noticeboard.service.AuthorService;
+import com.test.medium.noticeboard.controller.dto.AuthorDTO;
+import com.test.medium.noticeboard.controller.dto.BoardDTO;
+import com.test.medium.noticeboard.service.AuthorService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -17,8 +17,8 @@ import org.springframework.test.web.servlet.MockMvc;
 import java.util.Collections;
 import java.util.Optional;
 
-import static com.wkrzywiec.medium.noticeboard.util.TestDataFactory.*;
-import static com.wkrzywiec.medium.noticeboard.util.TestDataFactory.getSingleBoardDTO;
+import static com.test.medium.noticeboard.util.TestDataFactory.*;
+import static com.test.medium.noticeboard.util.TestDataFactory.getSingleBoardDTO;
 import static org.hamcrest.Matchers.hasSize;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;

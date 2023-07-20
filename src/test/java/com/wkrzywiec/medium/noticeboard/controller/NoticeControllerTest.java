@@ -1,8 +1,8 @@
-package com.wkrzywiec.medium.noticeboard.controller;
+package com.test.medium.noticeboard.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.wkrzywiec.medium.noticeboard.controller.dto.NoticeDTO;
-import com.wkrzywiec.medium.noticeboard.service.NoticeService;
+import com.test.medium.noticeboard.controller.dto.NoticeDTO;
+import com.test.medium.noticeboard.service.NoticeService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -19,7 +19,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-import static com.wkrzywiec.medium.noticeboard.util.TestDataFactory.*;
+import static com.test.medium.noticeboard.util.TestDataFactory.*;
 import static org.hamcrest.Matchers.hasSize;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;

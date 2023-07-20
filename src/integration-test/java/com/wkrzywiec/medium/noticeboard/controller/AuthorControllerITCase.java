@@ -1,7 +1,7 @@
-package com.wkrzywiec.medium.noticeboard.controller;
+package com.test.medium.noticeboard.controller;
 
 import com.google.gson.JsonObject;
-import com.wkrzywiec.medium.noticeboard.config.TestDataProvider;
+import com.test.medium.noticeboard.config.TestDataProvider;
 import io.restassured.response.ValidatableResponse;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

@@ -1,10 +1,10 @@
 # Noticeboard CRUD application
 
-![Master Branch](https://github.com/wkrzywiec/NoticeBoard/workflows/Master%20Branch/badge.svg) [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=wkrzywiec_NoticeBoard&metric=coverage)](https://sonarcloud.io/dashboard?id=wkrzywiec_NoticeBoard) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=wkrzywiec_NoticeBoard&metric=alert_status)](https://sonarcloud.io/dashboard?id=wkrzywiec_NoticeBoard)
+![Master Branch](https://github.com/test/NoticeBoard/workflows/Master%20Branch/badge.svg) [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=test_NoticeBoard&metric=coverage)](https://sonarcloud.io/dashboard?id=test_NoticeBoard) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=test_NoticeBoard&metric=alert_status)](https://sonarcloud.io/dashboard?id=test_NoticeBoard)
 
 This is a simple RESTful CRUD (Create Read Update Delete) application for managing Boards, Notices and Authors saved in PostgreSQL database. It provides basic REST endpoints like fetching all objects of given type, finding them by their id, creating them and so on.
 
-![data-model](https://github.com/wkrzywiec/NoticeBoard/blob/master/pics/data-model.png)
+![data-model](https://github.com/test/NoticeBoard/blob/master/pics/data-model.png)
 
 ## Usage
 
@@ -20,7 +20,7 @@ If you run this application locally the `{baseUrl}` would be `http://localhost:8
 
 All available endpoints are listed on *Swagger UI* page which can be entered, when application is running, under *http://localhost:8080/swagger-ui.html* URL.
 
-![endpoints](https://github.com/wkrzywiec/NoticeBoard/blob/master/pics/notice-endpoints.png)
+![endpoints](https://github.com/test/NoticeBoard/blob/master/pics/notice-endpoints.png)
 
 ## Installation
 

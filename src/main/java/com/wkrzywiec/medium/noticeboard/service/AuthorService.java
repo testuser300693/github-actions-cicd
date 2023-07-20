@@ -1,9 +1,9 @@
-package com.wkrzywiec.medium.noticeboard.service;
+package com.test.medium.noticeboard.service;
 
-import com.wkrzywiec.medium.noticeboard.controller.dto.AuthorDTO;
-import com.wkrzywiec.medium.noticeboard.entity.Author;
-import com.wkrzywiec.medium.noticeboard.mapper.AuthorMapper;
-import com.wkrzywiec.medium.noticeboard.repository.AuthorRepository;
+import com.test.medium.noticeboard.controller.dto.AuthorDTO;
+import com.test.medium.noticeboard.entity.Author;
+import com.test.medium.noticeboard.mapper.AuthorMapper;
+import com.test.medium.noticeboard.repository.AuthorRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import static com.wkrzywiec.medium.noticeboard.mapper.AuthorMapper.INSTANCE;
+import static com.test.medium.noticeboard.mapper.AuthorMapper.INSTANCE;
 
 @Service
 @RequiredArgsConstructor

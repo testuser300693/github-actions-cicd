@@ -1,8 +1,8 @@
-package com.wkrzywiec.medium.noticeboard.service;
+package com.test.medium.noticeboard.service;
 
-import com.wkrzywiec.medium.noticeboard.controller.dto.AuthorDTO;
-import com.wkrzywiec.medium.noticeboard.entity.Author;
-import com.wkrzywiec.medium.noticeboard.repository.AuthorRepository;
+import com.test.medium.noticeboard.controller.dto.AuthorDTO;
+import com.test.medium.noticeboard.entity.Author;
+import com.test.medium.noticeboard.repository.AuthorRepository;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -14,7 +14,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
-import static com.wkrzywiec.medium.noticeboard.util.TestDataFactory.*;
+import static com.test.medium.noticeboard.util.TestDataFactory.*;
 import static org.junit.Assert.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;

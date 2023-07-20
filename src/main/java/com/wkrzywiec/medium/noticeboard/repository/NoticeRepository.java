@@ -1,6 +1,6 @@
-package com.wkrzywiec.medium.noticeboard.repository;
+package com.test.medium.noticeboard.repository;
 
-import com.wkrzywiec.medium.noticeboard.entity.Notice;
+import com.test.medium.noticeboard.entity.Notice;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

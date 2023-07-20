@@ -1,7 +1,7 @@
-package com.wkrzywiec.medium.noticeboard.mapper;
+package com.test.medium.noticeboard.mapper;
 
-import com.wkrzywiec.medium.noticeboard.controller.dto.BoardDTO;
-import com.wkrzywiec.medium.noticeboard.entity.Board;
+import com.test.medium.noticeboard.controller.dto.BoardDTO;
+import com.test.medium.noticeboard.entity.Board;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

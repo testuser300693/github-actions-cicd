@@ -1,4 +1,4 @@
-package com.wkrzywiec.medium.noticeboard.config;
+package com.test.medium.noticeboard.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.TestConfiguration;

@@ -1,11 +1,11 @@
-package com.wkrzywiec.medium.noticeboard.util;
+package com.test.medium.noticeboard.util;
 
-import com.wkrzywiec.medium.noticeboard.controller.dto.AuthorDTO;
-import com.wkrzywiec.medium.noticeboard.controller.dto.BoardDTO;
-import com.wkrzywiec.medium.noticeboard.controller.dto.NoticeDTO;
-import com.wkrzywiec.medium.noticeboard.entity.Author;
-import com.wkrzywiec.medium.noticeboard.entity.Board;
-import com.wkrzywiec.medium.noticeboard.entity.Notice;
+import com.test.medium.noticeboard.controller.dto.AuthorDTO;
+import com.test.medium.noticeboard.controller.dto.BoardDTO;
+import com.test.medium.noticeboard.controller.dto.NoticeDTO;
+import com.test.medium.noticeboard.entity.Author;
+import com.test.medium.noticeboard.entity.Board;
+import com.test.medium.noticeboard.entity.Notice;
 
 import java.util.List;
 import java.util.stream.Collectors;

@@ -1,4 +1,4 @@
-package com.wkrzywiec.medium.noticeboard.config;
+package com.test.medium.noticeboard.config;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;

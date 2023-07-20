@@ -1,7 +1,7 @@
-package com.wkrzywiec.medium.noticeboard.service;
+package com.test.medium.noticeboard.service;
 
-import com.wkrzywiec.medium.noticeboard.controller.dto.NoticeDTO;
-import com.wkrzywiec.medium.noticeboard.entity.Notice;
+import com.test.medium.noticeboard.controller.dto.NoticeDTO;
+import com.test.medium.noticeboard.entity.Notice;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

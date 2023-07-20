@@ -1,6 +1,6 @@
-package com.wkrzywiec.medium.noticeboard.service;
+package com.test.medium.noticeboard.service;
 
-import com.wkrzywiec.medium.noticeboard.controller.dto.BaseDTO;
+import com.test.medium.noticeboard.controller.dto.BaseDTO;
 
 import java.util.List;
 import java.util.Optional;

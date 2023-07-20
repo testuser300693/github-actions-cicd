@@ -1,4 +1,4 @@
-package com.wkrzywiec.medium.noticeboard.entity;
+package com.test.medium.noticeboard.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

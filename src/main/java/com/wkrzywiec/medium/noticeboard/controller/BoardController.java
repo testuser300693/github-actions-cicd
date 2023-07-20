@@ -1,7 +1,7 @@
-package com.wkrzywiec.medium.noticeboard.controller;
+package com.test.medium.noticeboard.controller;
 
-import com.wkrzywiec.medium.noticeboard.controller.dto.BoardDTO;
-import com.wkrzywiec.medium.noticeboard.service.BoardService;
+import com.test.medium.noticeboard.controller.dto.BoardDTO;
+import com.test.medium.noticeboard.service.BoardService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

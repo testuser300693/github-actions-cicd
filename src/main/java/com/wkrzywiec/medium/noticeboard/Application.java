@@ -1,4 +1,4 @@
-package com.wkrzywiec.medium.noticeboard;
+package com.test.medium.noticeboard;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

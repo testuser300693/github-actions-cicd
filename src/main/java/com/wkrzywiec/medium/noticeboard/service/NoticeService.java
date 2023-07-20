@@ -1,8 +1,8 @@
-package com.wkrzywiec.medium.noticeboard.service;
+package com.test.medium.noticeboard.service;
 
-import com.wkrzywiec.medium.noticeboard.controller.dto.NoticeDTO;
-import com.wkrzywiec.medium.noticeboard.entity.Notice;
-import com.wkrzywiec.medium.noticeboard.repository.NoticeRepository;
+import com.test.medium.noticeboard.controller.dto.NoticeDTO;
+import com.test.medium.noticeboard.entity.Notice;
+import com.test.medium.noticeboard.repository.NoticeRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import static com.wkrzywiec.medium.noticeboard.mapper.NoticeMapper.*;
+import static com.test.medium.noticeboard.mapper.NoticeMapper.*;
 
 @Service
 @RequiredArgsConstructor

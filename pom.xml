@@ -10,7 +10,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>com.wkrzywiec.medium</groupId>
+	<groupId>com.test.medium</groupId>
 	<artifactId>noticeboard</artifactId>
 	<version>0.0.10</version>
 	<name>noticeboard</name>
@@ -21,9 +21,9 @@
 		<org.mapstruct.version>1.3.1.Final</org.mapstruct.version>
 		<org.projectlombok.version>1.18.10</org.projectlombok.version>
 		<code.coverage.exclusions>
-			**/com/wkrzywiec/medium/noticeboard/controller/dto/**,
-			**/com/wkrzywiec/medium/noticeboard/entity/**,
-			**/com/wkrzywiec/medium/noticeboard/Application.java
+			**/com/test/medium/noticeboard/controller/dto/**,
+			**/com/test/medium/noticeboard/entity/**,
+			**/com/test/medium/noticeboard/Application.java
 		</code.coverage.exclusions>
 	</properties>
 
