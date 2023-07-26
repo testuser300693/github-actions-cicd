@@ -3,9 +3,16 @@
   become: true
   become_method: sudo
   tasks:
+    - name: Add host to group 'just_created' with variable foo=42
+      add_host:
+        name: '{{ ip_from_ec2 }}'
+        groups: just_created
+        foo: 42
     - name: Create a file called '/tmp/testfile.txt' with the content 'hello world'.
       copy:
         content: hello-world
         dest: /tmp/testfile.txt
         mode: 0644
+        # action run ansible script
+        # service ssh status
         # ansible-playbook -vvv --private-key /home/runner/.ssh/id_rsa -u ${{secrets.ANSIBLE_DEPLOY_USER}} -i ansible_test.yml
