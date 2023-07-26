@@ -43,4 +43,16 @@ jobs:
               run: ansible --version
             - name: check terraform version
               run: terraform -version
+            - name: setup shh
+              run: |
+                eval `ssh-agent -s`
+                mkdir -p /home/runner/.ssh/
+                touch /home/runner/.ssh/id_rsa
+                echo -e "${{secrets.SSH_KEY}}" > /home/runner/.ssh/id_rsa
+                chmod 700 /home/runner/.ssh/id_rsa
+                ssh-keyscan -t rsa,dsa,ecdsa,ed25519 ${{secrets.SSH_HOST}} >> /home/runner/.ssh/known_hosts
+            - name: check terraform version
+              run: |
+                echo /home/runner/.ssh/id_rsa
+                echo /home/runner/.ssh/known_hosts
 
