@@ -1,0 +1,11 @@
+
+- hosts: all
+  become: true
+  become_method: sudo
+  tasks:
+    - name: Create a file called '/tmp/testfile.txt' with the content 'hello world'.
+      copy:
+        content: hello-world
+        dest: /tmp/testfile.txt
+        mode: 0644
+        # ansible-playbook -vvv --private-key /home/runner/.ssh/id_rsa -u ${{secrets.ANSIBLE_DEPLOY_USER}} -i ansible_test.yml

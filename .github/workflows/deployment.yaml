@@ -51,8 +51,10 @@ jobs:
                 echo -e "${{secrets.SSH_KEY}}" > /home/runner/.ssh/id_rsa
                 chmod 700 /home/runner/.ssh/id_rsa
                 ssh-keyscan -t rsa,dsa,ecdsa,ed25519 ${{secrets.SSH_HOST}} >> /home/runner/.ssh/known_hosts
-            - name: check terraform version
+            - name: Run ansible script
+              shell: bash 
               run: |
-                echo /home/runner/.ssh/id_rsa
-                echo /home/runner/.ssh/known_hosts
+                service ssh status
+                ansible-playbook -vvv --private-key /home/runner/.ssh/id_rsa -i ansible_test.yml
+        
 
