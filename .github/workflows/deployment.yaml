@@ -54,6 +54,6 @@ jobs:
             - name: Run ansible script
               shell: bash 
               run: |
-                ansible-playbook -vvv --extra-vars="ip_from_ec2=${{secrets.SSH_HOST}}" --private-key /home/runner/.ssh/id_rsa -u ubuntu -i ansible_test.yml
+                echo /etc/ansible/hosts
         
 

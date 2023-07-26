@@ -16,3 +16,4 @@
         # action run ansible script
         # service ssh status
         # ansible-playbook -vvv --private-key /home/runner/.ssh/id_rsa -u ${{secrets.ANSIBLE_DEPLOY_USER}} -i ansible_test.yml
+        # ansible-playbook -vvv --extra-vars="ip_from_ec2=${{secrets.SSH_HOST}}" --private-key /home/runner/.ssh/id_rsa -u ubuntu -i ansible_test.yml
