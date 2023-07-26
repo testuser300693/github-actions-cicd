@@ -1,10 +1,11 @@
-name: Deployment
+name: Build and Deployment
 on: 
     pull_request:
         types: [opened, reopened]
 #         branches:
 #             - 'main'
 #             - 'main*'
+    workflow_dispatch:
 jobs:
     artifact:
         name: Publish - GitHub Packages
@@ -34,3 +35,10 @@ jobs:
           run: docker build -t $REPO:latest -t $REPO:${GITHUB_SHA::8} .
         - name: Publish Docker image
           run: docker push $REPO
+    deploy-EC2:
+        name: Deploy application to ec2
+        runs-on: ubuntu-latest
+        steps:
+            - name: check ansible version
+              run: ansible --version
+

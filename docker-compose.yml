@@ -2,7 +2,7 @@ version: '2'
 
 services:
   app:
-    image: 'notice:v1.0'
+    image: 'bharath3006/practice:latest'
     build:
       context: .
     ports:
