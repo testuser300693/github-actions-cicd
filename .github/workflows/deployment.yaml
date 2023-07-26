@@ -55,6 +55,6 @@ jobs:
               shell: bash 
               run: |
                 service ssh status
-                ansible-playbook -vvv --private-key /home/runner/.ssh/id_rsa -i ansible_test.yml
+                ansible-playbook -vvv --private-key /home/runner/.ssh/id_rsa -u ubuntu -i ansible_test.yml
         
 
