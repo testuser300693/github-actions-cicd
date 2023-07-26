@@ -54,6 +54,6 @@ jobs:
             - name: Run ansible script
               shell: bash 
               run: |
-                echo /etc/ansible/hosts
+                cat /etc/ansible/hosts
         
 
