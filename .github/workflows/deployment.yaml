@@ -41,4 +41,6 @@ jobs:
         steps:
             - name: check ansible version
               run: ansible --version
+            - name: check terraform version
+              run: terraform -version
 
