@@ -10,7 +10,7 @@
 
 	<groupId>com.test.medium</groupId>
 	<artifactId>noticeboard</artifactId>
-	<version>0.0.41</version>
+	<version>0.0.42</version>
 	<name>noticeboard</name>
 	<description>Notice Board CRUD application</description>
 
