@@ -47,4 +47,4 @@ jobs:
             #     cp 
             - name: run playbook
               run: |
-                ansible-playbook -vvv /home/ubuntu/actions-runner/_work/{{ $REPO_NAME }}/{{ $REPO_NAME }}/ansible_test.yaml --extra-vars "repo_name=$REPO_NAME"
+                ansible-playbook -vvv /home/ubuntu/actions-runner/_work/$REPO_NAME/$REPO_NAME/ansible_test.yaml --extra-vars "repo_name=$REPO_NAME"
