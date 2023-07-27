@@ -37,23 +37,7 @@ jobs:
     #       run: docker push $REPO
     deploy-EC2:
         name: Deploy application to ec2
-        runs-on: ubuntu-latest
+        runs-on: self-hosted
         steps:
             - name: check ansible version
               run: ansible --version
-            - name: check terraform version
-              run: terraform -version
-            - name: setup shh
-              run: |
-                eval `ssh-agent -s`
-                mkdir -p /home/runner/.ssh/
-                touch /home/runner/.ssh/id_rsa
-                echo -e "${{secrets.SSH_KEY}}" > /home/runner/.ssh/id_rsa
-                chmod 700 /home/runner/.ssh/id_rsa
-                ssh-keyscan -t rsa,dsa,ecdsa,ed25519 ${{secrets.SSH_HOST}} >> /home/runner/.ssh/known_hosts
-            - name: Run ansible script
-              shell: bash 
-              run: |
-                cat /etc/ansible/hosts
-        
-
