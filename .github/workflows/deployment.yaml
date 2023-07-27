@@ -42,9 +42,6 @@ jobs:
             - uses: actions/checkout@v3
             - name: move checkout location
               run: echo "REPO_NAME=${{ github.event.repository.name }}" >> $GITHUB_ENV
-            # - name: move checkout location
-            #   run: |
-            #     cp 
             - name: run playbook
               run: |
                 ansible-playbook -vvv /home/ubuntu/actions-runner/_work/$REPO_NAME/$REPO_NAME/ansible_test.yaml --extra-vars "repo_name=$REPO_NAME"

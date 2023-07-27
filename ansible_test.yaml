@@ -20,3 +20,6 @@
         src: "/home/ubuntu/actions-runner/_work/{{ repo_name }}/{{ repo_name }}/docker-compose.yml"
         dest: /home/ubuntu/{{ repo_name }}/
         mode: 0766
+    - name: run docker compose up -d
+      shell: |
+        docker-compose up -d 
