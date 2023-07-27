@@ -38,6 +38,7 @@ jobs:
     deploy-EC2:
         name: Deploy application to ec2
         runs-on: self-hosted
+        needs: docker
         steps:
             - uses: actions/checkout@v3
             - name: move checkout location
