@@ -22,4 +22,5 @@
         mode: 0766
     - name: run docker compose up -d
       shell: |
+        cd {{ repo_name }}
         docker-compose up -d 
