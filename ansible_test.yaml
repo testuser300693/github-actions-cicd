@@ -2,19 +2,47 @@
 - hosts: localhost
   # become: true
   # become_method: sudo
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
   tasks:
-    - name: Add host to group 'just_created' with variable foo=42
+    - name: start an instance with a public IP address
+      amazon.aws.ec2_instance:
+        name: "app-noticeboard"
+        key_name: "vineel"
+        instance_type: t2.micro
+        network:
+          vpc_subnet_id: subnet-0b51d97939ae91c74
+          security_group: [sg-04c2e0dc1c8be1ea9, sg-0b295fccd36686d7c]
+          assign_public_ip: true
+        image_id: ami-068be83746c43f020
+        state: running
+        tags:
+          Environment: dev
+      register: ec2
+      delegate_to: localhost
+    - name: Set ec2 facts
+      set_fact:
+        ec2_ip : "{{ ec2.instances[0].public_ip_address }}"
+    - debug:
+        msg: "{{ ec2_ip }}"
+    - name: Add host to group 'just_created'
       add_host:
-        name: 65.1.110.217
+        name: "{{ ec2_ip }}"
         groups: just_created
-        foo: 42
 
 - hosts: just_created
   # become: true
   # become_method: sudo
   gather_facts: no
   tasks:
-
+    - name: Wait for SSH to come up
+      # delegate_to: "{{ ec2.instances[0].public_dns_name }}"
+      wait_for_connection:
+        delay: 60
+        sleep: 15
+        timeout: 600
+      # vars:
+      #   ansible_user: centos
     - name: copy the docker compose to remote
       copy:
         src: "/home/ubuntu/actions-runner/_work/{{ repo_name }}/{{ repo_name }}/docker-compose.yml"
