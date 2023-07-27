@@ -39,5 +39,4 @@ jobs:
         name: Deploy application to ec2
         runs-on: self-hosted
         steps:
-            - name: check ansible version
-              run: ansible --version
+            - uses: actions/checkout@v1
