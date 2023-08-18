@@ -14,7 +14,7 @@
           vpc_subnet_id: subnet-0b51d97939ae91c74
           security_group: [sg-04c2e0dc1c8be1ea9, sg-0b295fccd36686d7c]
           assign_public_ip: true
-        image_id: ami-0522db164c224f05e
+        image_id: ami-0b5abc7539ea917f8
         state: running
         tags:
           Environment: dev
